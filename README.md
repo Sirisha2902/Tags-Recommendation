@@ -22,7 +22,7 @@ This project provides a Gradio-based interface for comprehensive text analysis, 
 - YAKE
 - Pandas
 
-*`Additionally, we have one more code which is`*
+*Additionally, we have one more code which is*
 **`XML Content Analysis Tool`**
 
 This Python script fetches and analyzes XML content from URLs to extract named entities, keywords, and tags. It uses SpaCy for named entity recognition, TextBlob and YAKE for keyword extraction, and provides detailed output, including highlighted text and tables of matched and unmatched tags. The script also performs category extraction and similarity checks with existing tags.
