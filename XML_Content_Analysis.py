@@ -79,7 +79,7 @@ def extract_yake_keywords(text, max_keywords=10):
     keywords = kw_extractor.extract_keywords(text)
     return clean_and_filter_phrases(kw[0] for kw in keywords[:max_keywords])
 
-def read_existing_tags(filepath='updated_tags.txt'):
+def read_existing_tags(filepath='updated_tags.txt'):    # Attach your .txt file here
     try:
         with open(filepath, 'r') as file:
             return {line.strip().lower() for line in file.readlines()}
@@ -335,5 +335,5 @@ def main(url):
         
         console.print("----------------------------------------------------------------------------------------------------------------------------------------------------")
 
-url = "https://rss1.oneindia.com/xml4apps/www.oneindia.com/latest.xml"
+url = "https://rss1.oneindia.com/xml4apps/www.oneindia.com/latest.xml"  # Replace this with XML source link.
 main(url)
